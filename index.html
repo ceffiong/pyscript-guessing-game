@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <h2 class="heading">
+            Guess a number from 0 to 9
+        </h2>
+        <hr />
+        <div class="guesses">
+            <div>Number of guesses <span id="no-of-guess">0</span></div>
+            <div>Max guess: 3</div>
+        </div>
+        <hr />
+        <div>
+            Game logs
+        </div>
+        <div id="game-log">
+
+        </div>
+        <hr />
+
+        <div class="btn-wrap">
+            <button id="0" disabled class="btn" data-num="0" py-click="choice">0</button>
+            <button id="1" disabled class="btn" data-num="1" py-click="choice">1</button>
+            <button id="2" disabled class="btn" data-num="2" py-click="choice">2</button>
+            <button id="3" disabled class="btn" data-num="3" py-click="choice">3</button>
+            <button id="4" disabled class="btn" data-num="4" py-click="choice">4</button>
+            <button id="5" disabled class="btn" data-num="5" py-click="choice">5</button>
+            <button id="6" disabled class="btn" data-num="6" py-click="choice">6</button>
+            <button id="7" disabled class="btn" data-num="7" py-click="choice">7</button>
+            <button id="8" disabled class="btn" data-num="8" py-click="choice">8</button>
+            <button id="9" disabled class="btn" data-num="9" py-click="choice">9</button>
+        </div>
+
+        <button id="start-game" py-click="start">
+            Start game
+        </button>
+
+    </main>
+
+
+    <script type="py" src="./main.py"></script>
+
+</body>
+
+</html>
