@@ -54,7 +54,7 @@ def choice(event):
     print(f"secret: {secret}  -> selected: {selected}")
     if(numOfGuess == maxGuess and secret != selected):
         print("You loss")
-        create_logs("You lost &#128521; Try again! ", "wrong-guess")
+        create_logs("Game over! Try again &#128521; ", "wrong-guess")
 
         # disable the buttons
         myButtons = document.querySelectorAll(".btn")
